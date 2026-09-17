@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danish Restaurant</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        nav {
+            background: #222;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: #ddd;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .menu {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #ccc;
+        }
+
+        .food {
+            font-size: 55px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 22px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header id="home">
+        <h1>🍕 Danish Restaurant</h1>
+        <p>Delicious food • Great taste • Affordable prices</p>
+
+        <a href="#menu">
+            <button>View Menu</button>
+        </a>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Danish Restaurant!
+            We serve delicious and fresh food for everyone.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>🍽️ Our Menu</h2>
+
+        <div class="menu">
+
+            <div class="card">
+                <div class="food">🍕</div>
+                <h3>Pizza</h3>
+                <p class="price">₹199</p>
+                <button>Order</button>
+            </div>
+
+            <div class="card">
+                <div class="food">🍔</div>
+                <h3>Burger</h3>
+                <p class="price">₹99</p>
+                <button>Order</button>
+            </div>
+
+            <div class="card">
+                <div class="food">🍟</div>
+                <h3>French Fries</h3>
+                <p class="price">₹79</p>
+                <button>Order</button>
+            </div>
+
+            <div class="card">
+                <div class="food">🥤</div>
+                <h3>Cold Drink</h3>
+                <p class="price">₹49</p>
+                <button>Order</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>📞 Contact Us</h2>
+        <p>Call: 9876543210</p>
+        <p>Open: 11 AM – 11 PM</p>
+
+        <button onclick="showMessage()">
+            📲 Contact Now
+        </button>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Danish Restaurant</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Thanks for contacting Danish Restaurant! 😊";
+        }
+    </script>
+
+</body>
+</html>
