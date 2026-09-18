@@ -6,152 +6,164 @@
 <title>Danish's Restaurant</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
+body{
+  font-family:Arial,sans-serif;
+  background:#111;
+  color:white;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #1b1b1b;
-  padding: 18px;
-  text-align: center;
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#171717;
+  padding:18px 10px;
+  text-align:center;
+  box-shadow:0 2px 10px #000;
 }
 
-nav h2 {
-  margin-bottom: 10px;
+nav h2{
+  color:#ffb000;
+  margin-bottom:12px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 8px;
+  font-weight:bold;
 }
 
-nav a:hover {
-  color: #ffb000;
+nav a:hover{
+  color:#ffb000;
 }
 
-.hero {
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
-  background: linear-gradient(#0009, #0009),
-              url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
-              center/cover;
+.hero{
+  min-height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:25px;
+  background:
+    linear-gradient(#0009,#0009),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+    center/cover;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+.hero h1{
+  font-size:46px;
+  margin-bottom:15px;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-bottom: 25px;
+.hero p{
+  font-size:19px;
+  margin-bottom:25px;
 }
 
-.btn {
-  display: inline-block;
-  background: #ffb000;
-  color: #111;
-  padding: 13px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
+.btn{
+  display:inline-block;
+  background:#ffb000;
+  color:#111;
+  padding:13px 24px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-.btn:hover {
-  background: white;
-  transform: scale(1.05);
+.btn:hover{
+  background:white;
 }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
+section{
+  padding:60px 20px;
+  text-align:center;
 }
 
-section h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+section h2{
+  font-size:32px;
+  margin-bottom:30px;
 }
 
-.menu {
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+.menu{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
 }
 
-.card {
-  background: #1e1e1e;
-  border-radius: 15px;
-  padding: 25px;
-  transition: 0.3s;
-  box-shadow: 0 5px 20px #0005;
+.card{
+  background:#1e1e1e;
+  border-radius:18px;
+  overflow:hidden;
+  transition:.3s;
+  box-shadow:0 5px 20px #0007;
 }
 
-.card:hover {
-  transform: translateY(-8px);
+.card:hover{
+  transform:translateY(-8px);
 }
 
-.food {
-  font-size: 65px;
-  margin-bottom: 15px;
+.card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
 }
 
-.card h3 {
-  margin-bottom: 10px;
+.card-content{
+  padding:20px;
 }
 
-.price {
-  color: #ffb000;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 12px;
+.card h3{
+  margin-bottom:10px;
 }
 
-.about {
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.7;
-  color: #ddd;
+.card p{
+  color:#ccc;
+  line-height:1.5;
 }
 
-.contact {
-  background: #1b1b1b;
+.price{
+  color:#ffb000;
+  font-size:21px;
+  font-weight:bold;
+  margin:15px 0;
 }
 
-footer {
-  background: #080808;
-  text-align: center;
-  padding: 20px;
-  color: #aaa;
+.about{
+  max-width:800px;
+  margin:auto;
+  color:#ccc;
+  line-height:1.8;
 }
 
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 36px;
+.contact{
+  background:#1b1b1b;
+}
+
+footer{
+  background:#080808;
+  text-align:center;
+  padding:22px;
+  color:#aaa;
+}
+
+@media(max-width:600px){
+  .hero h1{
+    font-size:34px;
   }
 
-  nav a {
-    margin: 0 5px;
-    font-size: 14px;
+  nav a{
+    font-size:13px;
+    margin:0 4px;
   }
 }
 </style>
@@ -169,7 +181,7 @@ footer {
 
 <section class="hero" id="home">
   <div>
-    <h1>Delicious Food, Happy Mood 😋</h1>
+    <h1>Delicious Food 😋</h1>
     <p>Fresh • Tasty • Made With Love ❤️</p>
     <a class="btn" href="#menu">View Menu</a>
   </div>
@@ -181,35 +193,43 @@ footer {
   <div class="menu">
 
     <div class="card">
-      <div class="food">🍕</div>
-      <h3>Cheese Pizza</h3>
-      <p>Hot & cheesy delicious pizza.</p>
-      <div class="price">₹199</div>
-      <a class="btn" href="#contact">Order Now</a>
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+      <div class="card-content">
+        <h3>🍕 Cheese Pizza</h3>
+        <p>Hot, cheesy and delicious pizza.</p>
+        <div class="price">₹199</div>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
     </div>
 
     <div class="card">
-      <div class="food">🍔</div>
-      <h3>Classic Burger</h3>
-      <p>Juicy burger with fresh vegetables.</p>
-      <div class="price">₹99</div>
-      <a class="btn" href="#contact">Order Now</a>
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+      <div class="card-content">
+        <h3>🍔 Classic Burger</h3>
+        <p>Juicy burger with fresh vegetables.</p>
+        <div class="price">₹99</div>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
     </div>
 
     <div class="card">
-      <div class="food">🍟</div>
-      <h3>French Fries</h3>
-      <p>Crispy golden fries.</p>
-      <div class="price">₹79</div>
-      <a class="btn" href="#contact">Order Now</a>
+      <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877">
+      <div class="card-content">
+        <h3>🍟 French Fries</h3>
+        <p>Crispy golden fries.</p>
+        <div class="price">₹79</div>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
     </div>
 
     <div class="card">
-      <div class="food">🥤</div>
-      <h3>Cold Drink</h3>
-      <p>Chilled and refreshing.</p>
-      <div class="price">₹49</div>
-      <a class="btn" href="#contact">Order Now</a>
+      <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+      <div class="card-content">
+        <h3>🥤 Cold Drink</h3>
+        <p>Chilled and refreshing.</p>
+        <div class="price">₹49</div>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
     </div>
 
   </div>
@@ -218,15 +238,15 @@ footer {
 <section id="about">
   <h2>👨‍🍳 About Us</h2>
   <p class="about">
-    Welcome to Danish's Restaurant! We serve tasty and fresh food
-    made with quality ingredients. Our goal is to make every customer
-    happy with delicious food and great service.
+    Welcome to Danish's Restaurant! We serve fresh and delicious food
+    made with quality ingredients. Our goal is to give every customer
+    a great food experience.
   </p>
 </section>
 
 <section class="contact" id="contact">
   <h2>📞 Contact Us</h2>
-  <p>Want to place an order?</p>
+  <p>Ready to order your favourite food?</p>
   <br>
   <a class="btn" href="https://wa.me/919999999999">
     💬 Order on WhatsApp
@@ -234,7 +254,7 @@ footer {
 </section>
 
 <footer>
-  <p>© 2026 Danish's Restaurant | Made with ❤️</p>
+  © 2026 Danish's Restaurant ❤️
 </footer>
 
 </body>
